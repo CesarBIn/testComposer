@@ -1,0 +1,23 @@
+{
+    "name": "indabasolutions/noseque",
+    "type": "pimcore-bundle",
+    "config": {
+      "sort-packages": true  
+    },
+    "//require": {
+        "pimcore/pimcore": ">=6.0"
+    },
+    "//autoload": {
+        "psr-4": {
+            "PimcoreExtBundle\\": "",
+            "Pimcore\\Model\\DataObject\\ClassDefinition\\Data\\" : "Model/DataObject/ClassDefinition/Data"
+        }
+    },
+    "//extra": {
+        "pimcore": {
+            "bundles": [
+                "PimcoreExtBundle\\PimcoreExtBundle"
+            ]
+        }
+    }
+}
